@@ -1,0 +1,9 @@
+version: "3"
+ 
+services:
+  python-server:
+    build: ./python
+    ports:
+      - "8888:8888"
+    volumes:
+      - /PATH_TO_YOU_CODE_FOLDER_FROM_SHARE_DIR://home/jovyan/work
